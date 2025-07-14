@@ -1,0 +1,114 @@
+/*el punto (.) es para clases (class) y el numeral (#) es para los ids (id)*/
+/* la clase suele utilizarse para cosas mas generales, como cuando tenes varias cosas a modificar con el mismo valor*/
+.imagen-estadisticas {
+  width: 400px;
+  height: auto;
+}
+
+#parrafo-estadisticas {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.nav-active {
+  font-weight: bold;
+}
+
+.equipo {
+  color: brown;
+}
+
+#contenedor-equipos {
+  background-color: bisque;
+  width: 300px;
+}
+
+#equipo-favorito {
+  color: gray;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*el list display sirve para modificar indicador de la lista*/
+/*flex-wrap sirve para acomodar los items hacia abajo cuando no entren en pantalla*/
+.lista-navegacion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+
+main {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 450px;
+  width: 100%;
+  padding: 0 10px;
+}
+.contenedor-contacto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.input-formulario {
+  padding: 8px;
+  width: 100%;
+  resize: none;
+}
+.boton-contacto {
+  padding: 10px;
+  width: 50%;
+  min-width: 120px;
+  max-width: 300px;
+}
+@media screen and (max-width: 480px) {
+  .contenedor-contacto {
+    padding: 0 15px;
+  }
+  
+  .formulario-contacto {
+    padding: 0 5px;
+  }
+  
+  .input-formulario {
+    padding: 6px;
+  }
+}
+
+a { 
+  appearance: none;
+}

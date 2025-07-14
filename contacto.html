@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Sports Contacto</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!--navegacion disponible en todas las paginas-->
+      <nav>
+        <ul class="lista-navegacion">
+          <li>
+            <a href="./index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="./sobre-nosotros.html">Sobre nosotros</a>
+          </li>
+          <li>
+            <a href="./resultados.html">Resultados</a>
+          </li>
+          <li>
+            <a href="./equipos.html">Equipos</a>
+          </li>
+          <li>
+            <a class="nav-active" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contenedor-contacto">
+      <h1>Contacto</h1>
+
+      <form class="formulario-contacto" action="">
+        <input
+          class="input-formulario"
+          placeholder="Nombre"
+          type="text"
+          name="Nombre"
+          id="Nombre"
+        />
+        <input
+          class="input-formulario"
+          placeholder="Apellido"
+          type="text"
+          name="Apellido"
+          id="Apellido"
+        />
+        <input
+          class="input-formulario"
+          placeholder="Telefono"
+          type="text"
+          name="Telefono"
+          id="Telefono"
+        />
+        <!--la propiedad rows sirve para darle la cantidad de renglones a un textarea, tambien esta la 
+        propiedad cols que sirve para delimitar la cantidad de letras antes de ir al siguiente renglon-->
+        <textarea
+          class="input-formulario"
+          placeholder="Motivo de Contacto"
+          name="Contenido"
+          id="Contenido"
+          rows="7"
+        ></textarea>
+        <button class="boton-contacto">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <p>Desarrollado por Federico Valentini</p>
+    </footer>
+  </body>
+</html>
